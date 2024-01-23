@@ -1,5 +1,47 @@
-template-repository (1.0-1) unstable; urgency=medium
+ruby-paint (2.2.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+  * Add Rules-Requires-Root: no
+  * Drop runtime dependency on ruby interpreter
+
+  [ Sophie Brun ]
+  * Update debian/watch
+  * New upstream version 2.2.0
+  * Update debian/copyright for new upstream release
+  * Update debian/watch
+  * Add debian/gemspec to handle multiple gemspec
+  * Update VCS fields
+  * Use debhelper-compat 12
+  * Bump Standards-Version
+  * Add autopkgtest
+  * Add missing data/rgb_colors.marshal.gz in package
+  * Remove shortcuts test to fix autopkgtest. We don't install the
+    paint-shortcuts gem.
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 10 Mar 2020 10:47:47 +0100
+
+ruby-paint (0.8.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add patch to fix test execution during autopkgtest
+  * Add gemspec to shipped files (Closes: #830918)
+  * debian/control: Bump standards-version to 3.9.8
+
+ -- Lucas Albuquerque Medeiros de Moura <lucas.moura128@gmail.com>  Thu, 14 Jul 2016 16:13:39 -0300
+
+ruby-paint (0.8.6-1) unstable; urgency=low
+
+  * New upstream release
+    - add explicit requirement on rbconfig (Closes: #705751)
+  * Modify gbp.conf to reflect different upstream git tagging format
+
+ -- Christian M. Amsüss <chrysn@fsfe.org>  Sun, 21 Apr 2013 23:07:25 +0200
+
+ruby-paint (0.8.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #646876)
+
+ -- Christian M. Amsüss <chrysn@fsfe.org>  Thu, 21 Feb 2013 00:39:32 +0100

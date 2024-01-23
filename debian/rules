@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
+export DH_RUBY = --gem-install
+export DH_RUBY_GEM_INSTALL_WHITELIST_APPEND = data/rgb_colors.marshal.gz
+
 %:
-	dh $@
+	dh $@ --buildsystem=ruby --with ruby

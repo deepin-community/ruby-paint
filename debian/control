@@ -1,15 +1,26 @@
-Source: template-repository
-Section: unknown
+Source: ruby-paint
+Section: ruby
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Christian M. Amsüss <chrysn@fsfe.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 4.5.0
+Homepage: https://github.com/janlelis/paint
+XS-Ruby-Versions: all
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-paint.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-paint
+Testsuite: autopkgtest-pkg-ruby
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: ruby-paint
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: terminal paint library with 256 color and effect support
+ The paint library for ruby provides a single method, `Paint.[]`, that produces
+ colored output on terminals. It comes with support for 256 color terminals,
+ ANSI effects, and allows defining custom shortcuts.
