@@ -1,0 +1,13 @@
+Description: Fix tests for autopkgtest
+Author: Lucas Albuquerque Medeiros de Moura <lucas.moura128@gmail.com>
+Last-updated: 2016-07-14
+Forwarded: not-needed 
+Bug: not-needed
+
+Index: ruby-paint/spec/spec_helper.rb
+===================================================================
+--- ruby-paint.orig/spec/spec_helper.rb
++++ ruby-paint/spec/spec_helper.rb
+@@ -1 +1 @@
+-require File.dirname(__FILE__) + '/../lib/paint'
++require 'paint'

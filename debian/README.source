@@ -1,0 +1,13 @@
+libpaint-ruby for Debian
+------------------------
+
+This package's sources is fetched from the git repository at [1]. Although
+something like an upstream tarball could be recovered from the gem file
+upstream provides at [2], it is not used as it deviates from the git source,
+and is generally strange (1970 timestamps).
+
+The package itself is maintained in git as described in the Vcs- fields in
+debian/control.
+
+[1] https://github.com/janlelis/paint.git
+[2] http://rubygems.org/downloads/paint-0.8.3.gem
